@@ -6,16 +6,11 @@ namespace LineComparisonComputation
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Computation");
-            Console.WriteLine("Enter x1");
-            int x1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter x2");
-            int x2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter y1");
-            int y1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter y2");
-            int y2 = Convert.ToInt32(Console.ReadLine());
-            LineComparison lineComparison = new LineComparison(x1,x2,y1,y2);
-            lineComparison.CalculateLength();
+            LineComparison lineComparison1 = new LineComparison(12, 15, 16, 24);
+            double line1 = lineComparison1.CalculateLength();
+            LineComparison lineComparison2 = new LineComparison(13, 19, 24, 45);
+            double line2 = lineComparison2.CalculateLength();
+            lineComparison2.CheckEquality(line1, line2);
         }
     }
 }
