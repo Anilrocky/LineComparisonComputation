@@ -11,6 +11,7 @@ namespace LineComparisonComputation
             LineComparison lineComparison2 = new LineComparison(13, 19, 24, 45);
             double line2 = lineComparison2.CalculateLength();
             lineComparison2.CheckEquality(line1, line2);
+            lineComparison2.CompareLines(line1, line2);
         }
     }
 }
