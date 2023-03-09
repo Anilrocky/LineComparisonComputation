@@ -27,11 +27,17 @@ namespace LineComparisonComputation
         public void CompareLines(double line1, double line2)
         {
             if (line1.CompareTo(line2) == 0)
+            {
                 Console.WriteLine(" Both the Lines are Equal");
+            }               
             if (line1.CompareTo(line2) > 0)
+            {
                 Console.WriteLine("Line1 is greater than Line2");
-            else
+            }              
+            if (line1.CompareTo(line2) < 0)
+            {
                 Console.WriteLine("Line2 is greater than Line1");
+            }               
         }
     }
 }
